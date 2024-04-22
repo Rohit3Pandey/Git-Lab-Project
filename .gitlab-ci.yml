@@ -30,6 +30,6 @@ depoly:
     before_script:
         - chmod 400 $SSH_KEY
     script:
-        - ssh -o StrictHostKeyChecking=no -i $SSH_KEY rohit@192.168.40.146 "
+        - ssh -o StrictHostKeyChecking=no -i $SSH_KEY ubuntu@34.227.65.219 "
             docker login -u $DOCKER_USER -p $DOCKER_PASS &&       
             docker run -d -p 5000:5000 rohit18docker/gitlab-ci-cd:python-app-06"               
