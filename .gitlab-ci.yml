@@ -13,7 +13,7 @@ run_test:
 
 build:
     stage: build
-    image: python:3.9-slim-buster
+    image: docker:20.10.16
     services:
         - docker:20.10.16-dind
     variables:
